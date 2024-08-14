@@ -1,4 +1,4 @@
-package contest.c2000;
+package contest.c966;
 
 import java.util.Scanner;
 
