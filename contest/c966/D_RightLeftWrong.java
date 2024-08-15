@@ -9,9 +9,13 @@ public class D_RightLeftWrong {
         int t = sc.nextInt();
         for(int j = 0; j < t; j++) {
             int n = sc.nextInt();
-            int[] arr = new int[n];
+            long[] arr = new long[n];
+            long temp = 0;
+            long[] sumArr = new long[n];
             for(int i = 0; i < n; i++) {
                 arr[i] = sc.nextInt();
+                sumArr[i] = temp;
+                temp += arr[i];
             }
             String str = sc.next();
 
@@ -34,15 +38,14 @@ public class D_RightLeftWrong {
                     l++;
                 }
             }
-            int total = 0;
+            long total = 0;
             for(int i = 0; i < list.size(); i++) {
                 ArrayList<Integer> list2 = list.get(i);
                 int left = list2.get(0);
                 int right = list2.get(1);
-                int sum = 0;
-                for(int k = left; k <= right; k++) {
-                    sum += arr[k];
-                }
+                long sum = sumArr[right] - sumArr[left];
+                sum += arr[right];
+
                 total += sum;
             }
             System.out.println(total);
