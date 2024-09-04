@@ -9,6 +9,7 @@ public class D_UnnaturalLanguageProcessing {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         for (int p = 0; p < t; p++) {
+            @SuppressWarnings("unused")
             int n = sc.nextInt();
             String str = sc.next();
             HashMap<Character, Character> map = new HashMap<>();
