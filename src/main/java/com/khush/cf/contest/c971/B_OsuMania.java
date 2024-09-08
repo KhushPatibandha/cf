@@ -3,7 +3,7 @@ package com.khush.cf.contest.c971;
 import java.util.Scanner;
 
 /** B */
-public class B {
+public class B_OsuMania {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();

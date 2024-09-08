@@ -3,7 +3,7 @@ package com.khush.cf.contest.c971;
 import java.util.Scanner;
 
 /** C */
-public class C {
+public class C_TheLegendOfFreyaTheFrog {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
